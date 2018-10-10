@@ -15,7 +15,7 @@ static char *name = "world";
 module_param(name, charp, S_IRGUO);
 MODULE_PARAM_DESC(name, "The name to display in /var/log/kern.log");
 
-static init __init hello_init(void)
+static int __init hello_init(void)
 {
     printk(KERN_INFO "HELLO_WORLD: Hello %s from the kernel", name);
     return 0;
