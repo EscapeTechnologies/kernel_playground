@@ -13,7 +13,7 @@ MODULE_VERSION("0.1");
 
 static char *name = "world";
 module_param(name, charp, S_IRGUO);
-MODULE_PARAM_DESC(name, "The name to display in /var/log/kern.log");
+MODULE_PARM_DESC(name, "The name to display in /var/log/kern.log");
 
 static int __init hello_init(void)
 {
