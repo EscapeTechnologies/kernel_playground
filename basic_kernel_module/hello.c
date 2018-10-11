@@ -12,7 +12,7 @@ MODULE_DESCRIPTION("Hello World linux kernel module");
 MODULE_VERSION("0.1");
 
 static char *name = "world";
-module_param(name, charp, S_IRGUO);
+module_param(name, charp, 0000);
 MODULE_PARM_DESC(name, "The name to display in /var/log/kern.log");
 
 static int __init hello_init(void)
